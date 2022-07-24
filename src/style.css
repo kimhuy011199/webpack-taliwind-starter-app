@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 400;
+  src: url('./assets/fonts/FiraMono-Regular.ttf');
+}
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 500;
+  src: url('./assets/fonts/FiraMono-Medium.ttf');
+}
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 700;
+  src: url('./assets/fonts/FiraMono-Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  @apply bg-dark text-white text-sm;
+}
+
+.app {
+  @apply max-w-7xl mx-auto p-6;
+}
+
+/* COMPONENTS */
+
+.heading-1 {
+  @apply text-6xl leading-tight font-bold;
+}
+
+.section-header {
+  @apply max-w-3xl flex flex-col gap-4;
+}
+
+.section-sub {
+  @apply text-base font-semibold text-secondary;
+}
+
+.section-icon {
+  @apply h-12 w-12;
+}
+
+.section-title {
+  @apply text-3xl font-bold;
+}
+
+.section-desc {
+  @apply text-slate-400 text-base;
+}
+
+.btn {
+  @apply border-none p-3.5 px-5 bg-primary rounded-md font-medium transition-all duration-300 hover:bg-secondary;
+}
+
+.btn-input {
+  @apply text-gray2 flex gap-3 w-72 bg-gray1 border border-slate-100 font-normal hover:bg-slate-700;
+}
+
+.btn-icon {
+  @apply w-5 h-5;
+}
+
+/* HEADER */
+
+.header {
+  @apply flex justify-between max-w-7xl mx-auto p-6;
+}
+
+.logo {
+  @apply h-5;
+}
+
+.nav-list {
+  @apply flex gap-8;
+}
+
+.nav-link {
+  @apply font-medium hover:text-primary;
+}
+
+/* INTRO SECTION */
+
+.intro {
+  @apply flex items-center py-32;
+}
+
+.intro {
+}
+
+.intro-content {
+  @apply flex flex-col items-center text-center max-w-5xl mx-auto gap-8;
+}
+
+.intro-desc {
+  @apply text-gray2 text-lg max-w-3xl;
+}
+
+.intro-actions {
+  @apply flex gap-4;
+}
+
+.intro-code {
+  @apply text-primary font-mono;
+}
+
+/* FEATURES SECTION */
+
+.features-content {
+  @apply mt-6;
+}
+
+.features-list {
+  @apply list-disc ml-10 marker:text-secondary;
+}
+
+.features-item {
+  @apply pl-2 pb-4;
+}
+
+/* FOOTER */
+
+.footer {
+  @apply max-w-7xl mx-auto p-6 py-10 mt-10 border-t border-t-gray1;
+}

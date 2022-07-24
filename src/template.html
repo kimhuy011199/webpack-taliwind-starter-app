@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/icons/favicon.svg"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Webpack TailwindCSS Starter App</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://tailwindcss.com/">
+        <img
+          src="./assets/images/tailwindcss-logo.svg"
+          alt="Tailwind logo"
+          class="logo"
+        />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="https://tailwindcss.com/">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://tailwindcss.com/">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://tailwindcss.com/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="app">
+      <section class="intro">
+        <div class="intro-content">
+          <h1 class="heading-1">
+            Rapidly build modern websites without ever leaving your HTML.
+          </h1>
+          <p class="intro-desc">
+            A utility-first CSS framework packed with classes like
+            <code class="intro-code">flex</code>,
+            <code class="intro-code">pt-4</code>,
+            <code class="intro-code">text-center</code> and
+            <code class="intro-code">rotate-90</code>
+            that can be composed to build any design, directly in your markup.
+          </p>
+          <div class="intro-actions">
+            <button class="btn">Get started</button>
+            <button class="btn btn-input">
+              <img
+                class="btn-icon"
+                src="./assets/icons/search.svg"
+                alt="search"
+              />
+              <span>Quick search...</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="features" data-aos="fade-up">
+        <div class="section-header">
+          <img
+            class="section-icon"
+            src="./assets/images/features.png"
+            alt="features"
+          />
+          <h3 class="section-sub">Build production</h3>
+          <h2 class="section-title">Webpack with TailwindCSS starter app.</h2>
+          <p class="section-desc">
+            Frontend environment for building JavaScript application with
+            TailwindCSS style. Ready to build production with minimize css,
+            javascript files. Includes the following features:
+          </p>
+        </div>
+        <div class="features-content">
+          <ul class="features-list">
+            <li class="features-item">Babel Loader</li>
+            <li class="features-item">HTMLWebpackPlugin</li>
+            <li class="features-item">WebpackDevServer</li>
+            <li class="features-item">Source Maps</li>
+            <li class="features-item">Asset Resource Loader</li>
+            <li class="features-item">TailwindCSS Configuration</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <img
+        src="./assets/images/tailwindcss-logo.svg"
+        alt="Tailwind logo"
+        class="logo"
+      />
+    </footer>
+  </body>
+</html>
